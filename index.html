@@ -1,217 +1,847 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>本格鮮魚店 - F-DIRECT(エフダイレクト)</title>
+	<meta charset="UTF-8" />
+	<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0" name="viewport">
+	<meta name="twitter:widgets:theme" content="light">
+	<meta property="og:title" content="Your-Title-Here" />
+	<meta property="og:type" content="website" />
+	<meta property="og:image" content="Your-Image-Url" />
+	<meta property="og:description" content="Your-Page-Description" />
+	<title>本格鮮魚店 - F-DIRECT(エフダイレクト)</title>
+	<link rel="shortcut icon" type="image/x-icon" href="images/theme-mountain-favicon.ico">
 
-  <!-- CSS  -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="css/app.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<!-- Font -->
+	<link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700italic%7CRoboto:400,300,700' rel='stylesheet' type='text/css'>
+	
+	<!-- Css -->
+	<link rel="stylesheet" href="css/core.min.css" />
+	<link rel="stylesheet" href="css/all.min.css" />
+	<link rel="stylesheet" href="css/app.css" />
+	<link rel="stylesheet" href="css/style.css" />
+
+	<!--[if lt IE 9]>
+    	<script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
 </head>
-<body>
-  <nav class="custom-header" role="navigation">
-    <div class="nav-wrapper container">
-      <a id="logo-container" href="#" class="brand-logo">F-Directロゴ</a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="#">メニュー</a></li>
-      </ul>
+<body class="shop home-page">
 
-      <ul id="nav-mobile" class="sidenav">
-        <li><a href="#">メニュー</a></li>
-      </ul>
-      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-    </div>
-  </nav>
+	<!-- Side Navigation Menu -->
+	<aside class="side-navigation-wrapper enter-right" data-no-scrollbar data-animation="scale-in">
+		<div class="side-navigation-scroll-pane">
+			<div class="side-navigation-inner">
+				<div class="side-navigation-header">
+					<div class="navigation-hide side-nav-hide">
+						<a href="#">
+							<span class="icon-cancel medium"></span>
+						</a>
+					</div>
+				</div>
+				<nav class="side-navigation nav-block">
+					<ul>
+						<li class="current">
+							<a href="#top" data-offset="0" class="scroll-link">TOP</a>
+						</li>
+						<li>
+							<a href="#general" data-offset="-60" class="scroll-link">一般販売</a>
+						</li>
+						<li>
+							<a href="#cuisine" data-offset="-60" class="scroll-link">料理屋様</a>
+						</li>
+						<li>
+							<a href="#facility" data-offset="-60" class="scroll-link">保育園・高齢者施設様</a>
+						</li>
+						<li>
+							<a href="#store" data-offset="-60" class="scroll-link">当店について</a>
+						</li>
+<!--						<li>-->
+<!--							<a href="#contact" data-offset="-60" class="scroll-link">お問い合わせ</a>-->
+<!--						</li>-->
+					</ul>
+				</nav>
+				<div class="side-navigation-footer">
+					<ul class="social-list list-horizontal">
+						<li><a href="#"><span class="icon-twitter small"></span></a></li>
+						<li><a href="#"><span class="icon-facebook small"></span></a></li>
+						<li><a href="#"><span class="icon-instagram small"></span></a></li>
+					</ul>
+					<p class="copyright no-margin-bottom">&copy; 2014 THEMEMOUNTAIN.</p>
+				</div>
+			</div>
+		</div>
+	</aside>
+	<!-- Side Navigation Menu End -->
 
-  <div class="container">
-    <div class="section">
+	<div class="wrapper reveal-side-navigation">
+		<div class="wrapper-inner">
 
-      <div class="row">
-        <div class="col s12 center">
-          <div class="slider">
-            <ul class="slides">
-              <li>
-                <img src="background1.png"> <!-- random image -->
-                <div class="caption center-align">
-                  <h3>本格鮮魚店</h3>
-                  <h5 class="light grey-text text-lighten-3">エフダイレクト</h5>
-                </div>
-              </li>
-              <li>
-                <img src="background2.png"> <!-- random image -->
-                <div class="caption left-align">
-                  <h3>Left Aligned Caption</h3>
-                  <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-                </div>
-              </li>
-              <li>
-                <img src="background3.png"> <!-- random image -->
-                <div class="caption right-align">
-                  <h3>Right Aligned Caption</h3>
-                  <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
+			<!-- Header -->
+			<header class="header header-fixed header-fixed-on-mobile header-transparent" data-bkg-threshold="100">
+				<div class="header-inner">
+					<div class="row nav-bar">
+						<div class="column width-12 nav-bar-inner">
+							<div class="logo" style="width: 60px">
+								<div class="logo-inner">
+									<a href="#"><img src="images/logo-dark.png" alt="F-DIRECT Logo" /></a>
+									<a href="#"><img src="images/logo.png" alt="F-DIRECT Logo" /></a>
+								</div>
+							</div>
+							<nav class="navigation nav-block secondary-navigation nav-left">
+								<ul>
+									<li class="current">
+										本格鮮魚店&nbsp;|&nbsp;F-DIRECT
+									</li>
+								</ul>
+							</nav>
+							<nav class="navigation nav-block primary-navigation nav-center">
+								<ul>
+									<li class="current">
+										<a href="#top" data-offset="-60" class="scroll-link">TOP</a>
+									</li>
+									<li>
+										<a href="#general" data-offset="0" class="scroll-link">一般販売</a>
+									</li>
+									<li>
+										<a href="#cuisine" data-offset="-60" class="scroll-link">料理屋様</a>
+									</li>
+									<li>
+										<a href="#facility" data-offset="-60" class="scroll-link">保育園・高齢者施設様</a>
+									</li>
+									<li>
+										<a href="#store" data-offset="-60" class="scroll-link">当店について</a>
+									</li>
+<!--									<li>-->
+<!--										<a href="#contact" data-offset="-60" class="scroll-link">お問い合わせ</a>-->
+<!--									</li>-->
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</header>
+			<!-- Header End -->
 
-    </div>
-  </div>
+			<!-- Content -->
+			<div class="content clearfix">
 
-  <!--
-  <div id="index-banner" class="parallax-container">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <br><br>
-        <h1 class="header center white-text text-lighten-2">本格鮮魚店</h1>
-        <div class="row center">
-          <h5 class="header col s12 light">エフダイレクト</h5>
-        </div>
-        <div class="row center">
-          <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>
-        </div>
-        <br><br>
+				<!-- Home -->
+				<section id="top" class="section-block featured-media window-height tm-slider-parallax-container">
+					<div class="tm-slider-container full-width-slider" data-featured-slider data-parallax data-parallax-fade-out data-animation="slide" data-scale-under="960">
+						<ul class="tms-slides">
+							<li class="tms-slide" data-image data-as-bkg-image data-force-fit data-overlay-bkg-color="#000000" data-overlay-bkg-opacity="0.5">
+								<div class="tms-content">
+									<div class="tms-content-inner center v-align-middle">
+										<div class="column width-12 center">
+											<p class="tms-caption text-large lspacing-small color-white no-margin-bottom"
+												data-animate-in="preset:slideInUpShort;duration:800ms;delay:800ms;"
+												data-no-scale
+											><span class="text-uppercase">本格鮮魚店</span> <em>&nbsp;</em> <span class="text-uppercase">F-DIRECT</span></p>
+											<div class="clear"></div>
+											<h1 class="tms-caption title-large text-uppercase color-white lspacing-medium mb-20 center"
+												data-animate-in="preset:slideInRightShort;duration:800ms;delay:400ms;"
+												data-no-scale
+											>
+											魚を未来につなげる
+											</h1>
+											<div class="clear"></div>
+<!--											<div class="tms-caption"-->
+<!--													data-animate-in="preset:scaleIn;duration:900ms;delay:1200ms;"-->
+<!--													data-no-scale-->
+<!--												>-->
+<!--													<a href="https://player.vimeo.com/video/148677689?autoplay=1" class="lightbox-link color-white" data-lightbox-animation="fade" data-toolbar="zoom">-->
+<!--														<span class="icon-circled border-white icon-play medium no-margins" data-no-scale></span>-->
+<!--													</a>-->
+<!--											</div>-->
+										</div>
+									</div>
+								</div>
+								<img data-src="background1.png" data-retina src="background1.png" alt=""/>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<!-- Home End -->
 
-      </div>
-    </div>
-    <div class="parallax"><img src="background1.png" alt="Unsplashed background img 1"></div>
-  </div>
-  -->
+				<!-- News -->
+				<section id="general">
+					<div class="section-block pb-0">
+						<div class="row">
+							<div class="column width-12">
+								<h2>一般のお客様大歓迎</h2>
+								<h4 class="mb-10 color-grey-light">～当社は他所にはない魚屋を目指しております！～</h4>
+							</div>
+						</div>
+					</div>
+					<div class="section-block pb-0">
+						<div class="row center">
+							<div class="column width-12">
+								<h2>こだわり</h2>
+							</div>
+						</div>
+					</div>
+					<div class="section-block content-inner blog-masonry grid-container fade-in-progressively no-padding-top no-padding-bottom" data-layout-mode="masonry" data-grid-ratio="1.5" data-animate-resize data-animate-resize-duration="0">
+						<div class="row mb-100">
+							<div class="column width-12">
+								<div class="row grid content-grid-3 clearfix">
+									<div class="grid-item grid-sizer">
+										<article class="post">
+											<div class="post-media">
+												<div class="thumbnail img-scale-in" data-hover-easing="easeInOut" data-hover-speed="700" data-hover-bkg-color="#00000" data-hover-bkg-opacity="0.5">
+													<a class="overlay-link" href="#">
+														<img src="images/blog/grid/landscape-margins-grid-7.jpg" alt=""/>
+													</a>
+												</div>
+											</div>
+											<div class="post-content">
+												<h2 class="post-title">１．品揃えも多くプロが買う様な魚介類を購入できる</h2>
+												<!--												<div class="post-info">-->
+												<!--													<span class="post-date">05 Feb 2016</span>-->
+												<!--												</div>-->
+												<p>
+												</p>
+											</div>
+										</article>
+									</div>
+									<div class="grid-item">
+										<article class="post">
+											<div class="post-media">
+												<div class="thumbnail img-scale-in" data-hover-easing="easeInOut" data-hover-speed="700" data-hover-bkg-color="#00000" data-hover-bkg-opacity="0.5">
+													<a class="overlay-link" href="#">
+														<img src="images/blog/grid/landscape-margins-grid-8.jpg" alt=""/>
+													</a>
+												</div>
+											</div>
+											<div class="post-content">
+												<h2 class="post-title">２．ロスカット、経費削減により安価を実現</h2>
+												<!--												<div class="post-info">-->
+												<!--													<span class="post-date">20 Jan 2016</span>-->
+												<!--												</div>-->
+												<p>
+												</p>
+											</div>
+										</article>
+									</div>
+									<div class="grid-item">
+										<article class="post">
+											<div class="post-media">
+												<div class="thumbnail img-scale-in" data-hover-easing="easeInOut" data-hover-speed="700" data-hover-bkg-color="#00000" data-hover-bkg-opacity="0.5">
+													<a class="overlay-link" href="#">
+														<img src="images/blog/grid/landscape-margins-grid-9.jpg" alt=""/>
+													</a>
+												</div>
+											</div>
+											<div class="post-content">
+												<h2 class="post-title">３．少量からでも購入できる</h2>
+												<!--												<div class="post-info">-->
+												<!--													<span class="post-date">03 Jan 2016</span>-->
+												<!--												</div>-->
+												<p>
+												</p>
+											</div>
+										</article>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="column width-12">
+								<div class="row grid content-grid-3 clearfix">
+									<div class="grid-item grid-sizer">
+										<article class="post">
+											<div class="post-media">
+												<div class="thumbnail img-scale-in" data-hover-easing="easeInOut" data-hover-speed="700" data-hover-bkg-color="#00000" data-hover-bkg-opacity="0.5">
+													<a class="overlay-link" href="#">
+														<img src="images/blog/grid/landscape-margins-grid-7.jpg" alt=""/>
+													</a>
+												</div>
+											</div>
+											<div class="post-content">
+												<h2 class="post-title">４．おろした魚の骨抜きまで対応可能</h2>
+<!--												<div class="post-info">-->
+<!--													<span class="post-date">05 Feb 2016</span>-->
+<!--												</div>-->
+												<p>
+												</p>
+											</div>
+										</article>
+									</div>
+									<div class="grid-item">
+										<article class="post">
+											<div class="post-media">
+												<div class="thumbnail img-scale-in" data-hover-easing="easeInOut" data-hover-speed="700" data-hover-bkg-color="#00000" data-hover-bkg-opacity="0.5">
+													<a class="overlay-link" href="#">
+														<img src="images/blog/grid/landscape-margins-grid-8.jpg" alt=""/>
+													</a>
+												</div>
+											</div>
+											<div class="post-content">
+												<h2 class="post-title">５．つくりおきはせず、目の前で調理します</h2>
+<!--												<div class="post-info">-->
+<!--													<span class="post-date">20 Jan 2016</span>-->
+<!--												</div>-->
+												<p>
+												</p>
+											</div>
+										</article>
+									</div>
+									<div class="grid-item">
+										<article class="post">
+											<div class="post-media">
+												<div class="thumbnail img-scale-in" data-hover-easing="easeInOut" data-hover-speed="700" data-hover-bkg-color="#00000" data-hover-bkg-opacity="0.5">
+													<a class="overlay-link" href="#">
+														<img src="images/blog/grid/landscape-margins-grid-9.jpg" alt=""/>
+													</a>
+												</div>
+											</div>
+											<div class="post-content">
+												<h2 class="post-title">６．生け簀（いけす）から揚げたての魚を少しずつでも調理します</h2>
+<!--												<div class="post-info">-->
+<!--													<span class="post-date">03 Jan 2016</span>-->
+<!--												</div>-->
+												<p>
+												</p>
+											</div>
+										</article>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="section-block center mb-30">
+						<div class="row">
+							<div class="column width-12">
+<!--								<p class="text-uppercase mb-10">Ongoing At Sartre</p>-->
+								<h2 class="third-color">当店の刺盛りは、品数多く大人気です</h2>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- News End -->
 
+				<!-- Concept Grid -->
+<!--				<section id="cuisine" class="section-block grid-container fade-in-progressively full-width no-margins no-padding bkg-white" data-layout-mode="masonry" data-grid-ratio="1" data-animate-filter-duration="700" data-set-dimensions data-animate-resize data-animate-resize-duration="0.8">-->
+				<section id="cuisine" class="section-block grid-container fade-in-progressively bkg-white" data-layout-mode="masonry" data-grid-ratio="1" data-animate-filter-duration="700" data-set-dimensions data-animate-resize data-animate-resize-duration="0.8">
+					<div class="mb-30">
+						<div class="row">
+							<div class="column width-12">
+								<h2>料理屋様へ</h2>
+								<h4 class="mb-10 color-grey-light">～他所にはない物が、他所にはない店に～</h4>
+							</div>
+						</div>
+					</div>
+                    <!--
+					<div class="row">
+						<div class="column width-12">
+							<div class="row grid content-grid-4">
+								<div class="grid-item large grid-sizer bkg-white">
+									<div class="content-outer">
+										<div class="content-inner">
+											<div class="row">
+												<div class="column width-8 offset-2 center">
+													<p class="text-uppercase mb-10">Concept</p>
+													<h2>A Culinary Journey</h2>
+													<p class="mb-50">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur.</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="grid-item">
+									<div class="thumbnail">
+										<img src="images/restaurant/portfolio/grid/no-margins/project-12-square.jpg" alt=""/>
+									</div>
+								</div>
+								<div class="grid-item grid-sizer">
+									<div class="thumbnail">
+										<img src="images/restaurant/portfolio/grid/no-margins/project-13-square.jpg" alt=""/>
+									</div>
+								</div>
+								
+								<div class="grid-item">
+									<div class="thumbnail">
+										<img src="images/restaurant/portfolio/grid/no-margins/project-14-square.jpg" alt=""/>
+									</div>
+								</div>
+								<div class="grid-item">
+									<div class="thumbnail">
+										<img src="images/restaurant/portfolio/grid/no-margins/project-15-square.jpg" alt=""/>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					-->
 
-  <div class="container">
-    <div class="section">
+					<div class="row">
+						<div class="column width-12">
+							<div class="box menu-box xlarge bkg-white mb-30 horizon" data-animate-in="preset:slideInUpShort;duration:1000ms;easing:swing;" data-threshold="0.2">
+								<div class="row">
+									<div class="column width-10 offset-1">
+										<h4 class="color-charcoal header-line">こだわり仕入</h4>
+										<ul class="menu-list left color-grey-light">
+											<li class="menu-item inline">
+												<h3 class="inline"><span class="font-alt-1 weight-light text-uppercase menu-title">１．多方面からの仕入</span></h3>
+												<span class="inline menu-description weight-light third-color ml-50">各地市場、漁師から仕入</span>
+											</li>
+											<li class="menu-item inline">
+												<h3 class="inline"><span class="font-alt-1 weight-light text-uppercase menu-title">２．多種の魚介類の仕入</span></h3>
+												<span class="inline menu-description weight-light third-color ml-50">多方面への販売を強化、様々な魚介類を仕入れる努力</span>
+											</li>
+											<li class="menu-item inline">
+												<h3 class="inline"><span class="font-alt-1 weight-light text-uppercase menu-title">３．グループ店との共同仕入による、大量購入</span></h3>
+												<span class="inline menu-description weight-light third-color ml-50">低価格を実現</span>
+											</li>
+										</ul>
+										<div class="divider"></div>
+										<h4 class="color-charcoal header-line">こだわり鮮度</h4>
+										<ul class="menu-list left color-grey-light">
+											<li class="menu-item inline">
+												<h3 class="inline"><span class="font-alt-1 weight-light text-uppercase menu-title">１．活きネタなのにうま味が増幅</span></h3>
+												<span class="inline menu-description weight-light third-color ml-50">当店独自の方法でうま味を最大に引き出す工夫</span>
+											</li>
+											<li class="menu-item inline">
+												<h3 class="inline"><span class="font-alt-1 weight-light text-uppercase menu-title">２．お客様の店が閉店まで活きネタを使えるように工夫</span></h3>
+												<span class="inline menu-description weight-light third-color ml-50">お客様に合わせて活き締めする時間の対応</span>
+											</li>
+											<li class="menu-item inline">
+												<h3 class="inline"><span class="font-alt-1 weight-light text-uppercase menu-title">３．常に活きネタをお客様に提供できるように工夫</span></h3>
+												<span class="inline menu-description weight-light third-color ml-50">出来る限り少量からの販売を実現</span>
+											</li>
+										</ul>
+										<div class="divider"></div>
 
-      <!--   Icon Section   -->
-      <div class="row">
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
-            <h5 class="center">アピール1</h5>
+										<div class="center mb-30">
+											<div class="row">
+												<div class="column width-12">
+													<h3>※博多は活きネタ文化</h3>
+													<h3 class="third-color">食感、うま味、両方を兼ね備えた当店の魚を食べてみてください</h3>
+												</div>
+											</div>
+										</div>
 
-            <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
-          </div>
-        </div>
+										<div class="divider"></div>
+										<h4 class="color-charcoal header-line">こだわり価格</h4>
+										<ul class="menu-list left color-grey-light">
+											<li class="menu-item inline">
+												<h3 class="inline"><span class="font-alt-1 weight-light text-uppercase menu-title">１．固定経費などを削減し還元</span></h3>
+<!--												<span class="inline menu-description weight-light secondary-color"></span>-->
+											</li>
+											<li class="menu-item inline">
+												<h3 class="inline"><span class="font-alt-1 weight-light text-uppercase menu-title">２．ロスをカットし還元</span></h3>
+												<span class="inline menu-description weight-light third-color ml-50">多方面への販売によるロス軽減</span>
+											</li>
+										</ul>
+										<div class="divider mb-30"></div>
+										<h4 class="color-charcoal header-line">こだわり衛生</h4>
+										<ul class="menu-list left color-grey-light">
+											<li class="menu-item inline">
+												<h3 class="inline"><span class="font-alt-1 weight-light text-uppercase menu-title">１．専門機関による年４回の商品検査</span></h3>
+												<span class="inline menu-description weight-light"></span>
+											</li>
+											<li class="menu-item inline">
+												<h3 class="inline"><span class="font-alt-1 weight-light text-uppercase menu-title">２．徹底された温度管理と管理された加工場</span></h3>
+												<span class="inline menu-description weight-light"></span>
+											</li>
+										</ul>
+										<div class="divider"></div>
 
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">group</i></h2>
-            <h5 class="center">アピール2</h5>
+										<div class="center mb-30">
+											<div class="row">
+												<div class="column width-12">
+													<h3 class="four-color">食中毒につながる大切な項目です</h3>
+												</div>
+											</div>
+										</div>
 
-            <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
-          </div>
-        </div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">settings</i></h2>
-            <h5 class="center">アピール3</h5>
+				</section>
+				<!-- Concept Grid End -->
 
-            <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
-          </div>
-        </div>
-      </div>
+				<!-- Menu Section -->
+				<section id="facility" class="section-block bkg-grey-ultralight">
+					<div class="mb-30">
+						<div class="row">
+							<div class="column width-12">
+								<h2>保育施設・高齢者施設他のお客様へ</h2>
+								<h4 class="mb-10 color-grey-light">～ちゃんとした魚を食べてもらいたい（冷凍外国産魚ではなくフレッシュな魚を）～</h4>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="column width-12">
+							<div class="box menu-box xlarge bkg-white mb-30 horizon" data-animate-in="preset:slideInUpShort;duration:1000ms;easing:swing;" data-threshold="0.2">
+								<div class="row">
+									<div class="column width-10 offset-1">
+<!--										<h4 class="color-charcoal">保育施設・高齢者施設他のお客様へ</h4>-->
+										<ul class="menu-list center color-grey-light">
+											<li class="menu-item inline">
+<!--												<h2 class="inline">-->
+<!--													<span class="font-alt-1 weight-light text-uppercase menu-title">-->
+<!--														<strong>Filet</strong> Mignon-->
+<!--														<strong>Sartre</strong>-->
+<!--													</span>-->
+<!--												</h2>-->
+												<ul class="menu-list color-grey-light">
+													<li class="menu-item inline">
+														<h3 class="inline">
+															<span class="font-alt-1 weight-light text-uppercase menu-title">
+																	食べる人は、選べません。出された物を食べるしかありません。
+															</span>
+														</h3>
+													</li>
+												</ul>
+												<ul class="menu-list color-grey-light">
+													<li class="menu-item inline">
+														<h3 class="inline four-color"><span class="font-alt-1 weight-light text-uppercase menu-title">
+															「当社は自分が食べたくない物は、お客様に出したくありません」
+														</span></h3>
+														<span class="inline menu-description weight-light">
+															フレッシュな魚がいいのはわかるけれど・・・
+														</span>
+													</li>
+												</ul>
+												<ul class="menu-list color-grey-light">
+													<li class="menu-item inline">
+														<h3 class="inline">
+															<span class="font-alt-1 weight-light text-uppercase menu-title">
+																	コスト面の問題、骨などの安全面の問題、作業の効率面の問題、衛生面の問題
+															</span>
+														</h3>
+													</li>
+												</ul>
+												<ul class="menu-list color-grey-light">
+													<li class="menu-item inline">
+														<h3 class="inline">
+															<span class="font-alt-1 weight-light text-uppercase menu-title">
+																	<i class="fas fa-check five-color"></i> 当社は、これらをすべて解決しました
+															</span>
+														</h3>
+													</li>
+												</ul>
+												<div class="column width-12 mt-30 mb-30">
+													<div class="divider"></div>
+												</div>
+												<ul class="menu-list left color-grey-light">
+													<li class="menu-item inline">
+														<h3 class="inline">
+															<span class="font-alt-1 weight-light text-uppercase menu-title">
+																	コスト面　　　&nbsp;&nbsp;<i class="fas fa-arrow-right"></i>&nbsp;&nbsp;<span class="third-color">多方面への販売でロスカットによる還元</span>
+															</span>
+														</h3>
+													</li>
+												</ul>
+												<ul class="menu-list left color-grey-light">
+													<li class="menu-item inline">
+														<h3 class="inline">
+															<span class="font-alt-1 weight-light text-uppercase menu-title">
+																	骨などの安全面&nbsp;&nbsp;<i class="fas fa-arrow-right"></i>&nbsp;&nbsp;<span class="third-color">すべて骨抜き、適量カットを手作業で行っております</span>
+															</span>
+														</h3>
+													</li>
+												</ul>
+												<ul class="menu-list left color-grey-light">
+													<li class="menu-item inline">
+														<h3 class="inline">
+															<span class="font-alt-1 weight-light text-uppercase menu-title">
+																	作業の効率面　&nbsp;&nbsp;<i class="fas fa-arrow-right"></i>&nbsp;&nbsp;<span class="third-color">味付けなどもサポート</span>
+															</span>
+														</h3>
+													</li>
+												</ul>
+												<ul class="menu-list left color-grey-light">
+													<li class="menu-item inline">
+														<h3 class="inline">
+															<span class="font-alt-1 weight-light text-uppercase menu-title">
+																	衛生面　　　　&nbsp;&nbsp;<i class="fas fa-arrow-right"></i>&nbsp;&nbsp;<span class="third-color">温度管理と専門機関による商品検査</span>
+															</span>
+														</h3>
+													</li>
+												</ul>
+												<div class="column width-12 mt-30 mb-30">
+													<div class="divider"></div>
+												</div>
+												<ul class="menu-list left color-grey-light">
+													<li class="menu-item inline">
+														<h3 class="inline center">
+															<span class="font-alt-1 weight-light text-uppercase menu-title">
+																	利用者様の声
+															</span>
+														</h3>
+														<h3 class="inline center">
+															<span class="font-alt-1 weight-light text-uppercase menu-title">
+																	「」
+															</span>
+														</h3>
+														<h3 class="inline center">
+															<span class="font-alt-1 weight-light text-uppercase menu-title">
+																	「」
+															</span>
+														</h3>
+													</li>
+												</ul>
+												<ul class="menu-list left color-grey-light">
+													<li class="menu-item inline">
+														<h3 class="inline">
+															<span class="font-alt-1 weight-light text-uppercase menu-title">
+																	当社のスローガンは、<span class="third-color">「魚を未来につなげる」</span>です
+															</span>
+														</h3>
+														<h3 class="inline">
+															<span class="font-alt-1 weight-light text-uppercase menu-title">
+																	今、少しでも多くの方においしい魚、おいしい食べ方を伝えていくことが魚屋の本当の仕事だと思っております
+															</span>
+														</h3>
+													</li>
+												</ul>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- Menu Section End -->
 
-    </div>
-  </div>
+				<!-- Profile -->
+				<section id="store">
 
+					<!-- Hero Section 5 -->
+					<div class="section-block hero-5 hero-5-3 window-height show-media-column-on-mobile color-charcoal">
+						<div class="media-column width-6">
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3325.023070851933!2d130.3788916!3d33.5527769!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35419377afb8f2fd%3A0x60be1cd501b246b7!2sF-DIRECT!5e0!3m2!1sja!2sjp!4v1597513390554!5m2!1sja!2sjp" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+						</div>
+						<div class="row">
+							<div class="column width-5 offset-7">
+								<div class="hero-content split-hero-content">
+									<div class="hero-content-inner horizon" data-animate-in="preset:slideInRightShort;duration:1000ms;" data-threshold="0.5">
+<!--										<p class="text-uppercase mb-10">Profile</p>-->
+										<h2 class="mb-50">本格鮮魚店 F-DIRECT</h2>
+										<h4 class="mb-30">〒814-0121</h4>
+										<h4 class="mb-30">福岡県福岡市城南区神松寺２丁目５−１３ 大恒ビル</h4>
+										<h4 class="mb-30">TEL： 092-707-6280</h4>
+										<h4 class="mb-30">定休日：水曜日および日曜日</h4>
+<!--										<p class="opacity-05 weight-bold">Michel Jare - Culinary Chef - Sartre</p>-->
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Hero Section 5 End -->
 
-  <div class="parallax-container valign-wrapper">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <div class="row center">
-          <a class="waves-effect waves-light btn-large custom-btn">こだわり</a>
-          <a class="waves-effect waves-light btn-large custom-btn">業務内容</a>
-        </div>
-        <div class="row center">
-          <a class="waves-effect waves-light btn-large custom-btn">　店舗　</a>
-          <a class="waves-effect waves-light btn-large custom-btn">　採用　</a>
-        </div>
-      </div>
-    </div>
-    <div class="parallax"><img src="background2.png" alt="Unsplashed background img 2"></div>
-  </div>
+				</section>
+				<!-- Profile End -->
 
-  <div class="container">
-    <div class="section">
+				<!-- Portfolio Slider -->
+				<div class="section-block portfolio-carousel no-padding bkg-grey-ultralight mt-60">
+					<div class="row full-width collapse">
+						<div class="column width-12 slider-column no-padding">
+							<div class="tm-slider-container recent-slider clear-height" data-carousel-visible-slides="4" data-auto-advance data-progress-bar="false" data-nav-pagination="false">
+								<ul class="tms-slides">
+									<li class="tms-slide">
+										<div class="thumbnail" data-hover-easing="easeInOut" data-hover-speed="700" data-hover-bkg-color="000000" data-hover-bkg-opacity="0.4">
+											<img data-src="images/restaurant/portfolio/grid/no-margins/project-16-square.jpg" src="images/blank.png" alt=""/>
+											<div class="caption-over-outer">
+												<div class="caption-over-inner v-align-bottom left color-white font-alt-1 weight-light text-uppercase">
+													<p>/<strong>Spring</strong> Oysters</p>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li class="tms-slide">
+										<div class="thumbnail" data-hover-easing="easeInOut" data-hover-speed="700" data-hover-bkg-color="000000" data-hover-bkg-opacity="0.4">
+											<img data-src="images/restaurant/portfolio/grid/no-margins/project-17-square.jpg" src="images/blank.png" alt=""/>
+											<div class="caption-over-outer">
+												<div class="caption-over-inner v-align-bottom left color-white font-alt-1 weight-light text-uppercase">
+													<p>/<strong>Beat</strong> Ceviche</p>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li class="tms-slide">
+										<div class="thumbnail" data-hover-easing="easeInOut" data-hover-speed="700" data-hover-bkg-color="000000" data-hover-bkg-opacity="0.4">
+											<img data-src="images/restaurant/portfolio/grid/no-margins/project-18-square.jpg" src="images/blank.png" alt=""/>
+											<div class="caption-over-outer">
+												<div class="caption-over-inner v-align-bottom left color-white font-alt-1 weight-light text-uppercase">
+													<p>/<strong>Prepping</strong> Seabass</p>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li class="tms-slide">
+										<div class="thumbnail" data-hover-easing="easeInOut" data-hover-speed="700" data-hover-bkg-color="000000" data-hover-bkg-opacity="0.4">
+											<img data-src="images/restaurant/portfolio/grid/no-margins/project-19-square.jpg" src="images/blank.png" alt=""/>
+											<div class="caption-over-outer">
+												<div class="caption-over-inner v-align-bottom left color-white font-alt-1 weight-light text-uppercase">
+													<p>/<strong>From</strong> The <strong>Garden</strong></p>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li class="tms-slide">
+										<div class="thumbnail" data-hover-easing="easeInOut" data-hover-speed="700" data-hover-bkg-color="000000" data-hover-bkg-opacity="0.4">
+											<img data-src="images/restaurant/portfolio/grid/no-margins/project-20-square.jpg" src="images/blank.png" alt=""/>
+											<div class="caption-over-outer">
+												<div class="caption-over-inner v-align-bottom left color-white font-alt-1 weight-light text-uppercase">
+													<p>/<strong>Seafood</strong> Soup</p>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li class="tms-slide">
+										<div class="thumbnail" data-hover-easing="easeInOut" data-hover-speed="700" data-hover-bkg-color="000000" data-hover-bkg-opacity="0.4">
+											<img data-src="images/restaurant/portfolio/grid/no-margins/project-21-square.jpg" src="images/blank.png" alt=""/>
+											<div class="caption-over-outer">
+												<div class="caption-over-inner v-align-bottom left color-white font-alt-1 weight-light text-uppercase">
+													<p>/<strong>Order</strong> In <strong>Queue</strong></p>
+												</div>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Portfolio Slider End -->
 
-      <div class="row">
-        <div class="col s12 center">
-          <h3><i class="mdi-content-send brown-text"></i></h3>
-          <h4>Contact Us</h4>
-          <p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
-        </div>
-      </div>
+				<!-- Contact -->
+				<!--
+                <section id="contact" class="section-block replicable-content contact-2 bkg-grey-ultralight">
+                    <div class="row">
+                        <div class="column width-12">
+                            <div class="booking-box bkg-white xlarge">
+                                <div class="row">
+                                    <div class="column width-10 offset-1">
+                                        <h2 class="mb-50">Book</h2>
+                                    </div>
+                                    <div class="column width-10 offset-1">
+                                        <div class="row">
+                                            <div class="column width-6 left">
+                                                <p class="mb-50">For large groups please email us or call us:<br><strong>Email:</strong> <a href="mailto:#">info@sartre.com</a><br>
+                                                <strong>Phone:</strong> +1 212-249-2390</p>
+                                            </div>
+                                            <div class="column width-6 left">
+                                                <p class="mb-50">324 West Broadway New York,<br>New York City, 10013<br><a data-content="iframe" data-toolbar="" href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.695953631291!2d-73.99639079999996!3d40.7247093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2598f0b0141e7%3A0xdf13b80fa41c4825!2s130+Crosby+St%2C+New+York%2C+NY+10012%2C+USA!5e0!3m2!1sen!2sgt!4v1441063606056" class="lightbox-link">See Google Map</a></p>
+                                            </div>
+                                            <div class="column width-12">
+                                                <div class="divider mb-30"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                -->
+				<!-- Contact End -->
 
-    </div>
-  </div>
+				<!-- Stat Section 1 -->
+				<!--
+				<div class="section-block replicable-content stats-1 stats-1-1 center color-white">
+					<div class="row">
+						<div class="column width-8 offset-2">
+							<div class="stat mb-30">
+								<div class="stat-inner">
+									<p class="description mb-10">ZAGAT / New York</p>
+									<p class="counter text-uppercase"><span class="stat-counter weight-bold" data-count-from="30" data-count-to="2">30</span> Leading <strong>Restaurant </strong> on <strong>The East Coast</strong></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				-->
+				<!-- Stat Section 1 -->
 
+			</div>
+			<!-- Content End -->
 
-  <div class="parallax-container valign-wrapper">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <div class="row center">
-          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
-        </div>
-      </div>
-    </div>
-    <div class="parallax"><img src="background3.png" alt="Unsplashed background img 3"></div>
-  </div>
+			<!-- Footer -->
+			<footer class="footer center">
+				<div class="footer-top">
+                    <!--
+					<div class="row">
+						<div class="column width-4 center">
+							<div class="widget">
+								<h4 class="widget-title">Locations</h4>
+								<p class="no-margin-bottom weight-bold">New York</p>
+								<address>324 West Broadway<br>New York, NY 10013</address>
+								<p class="no-margin-bottom weight-bold">Chicago</p>
+								<address>43rd East Village<br>Chicago, 9853</address>
+							</div>
+						</div>
+						<div class="column width-4 center">
+							<div class="widget">
+								<h4 class="widget-title">Opening Hours</h4>
+								<p class="no-margin-bottom weight-bold">Lunch</p>
+								<p>Monday - Saturday<br>
+								12.00 - 3.00pm</p>
+								<p class="no-margin-bottom weight-bold">Dinner</p>
+								<p>Monday - Sunday<br>
+								6.00 - 11:30pm</p>
+							</div>
+						</div>
+						<div class="column width-4 center">
+							<div class="widget">
+								<h4 class="widget-title">Follow Us</h4>
+								<p>Follow us and get notified of any<br> and all special events.</p>
+								<ul class="social-list list-vertical">
+									<li><a href="#">Twitter</a></li>
+									<li><a href="#">Facebook</a></li>
+									<li><a href="#">Instagram</a></li>
+									<li><a href="#">Vimeo</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					-->
 
-  <footer class="page-footer custom-footer">
-    <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">Company Bio</h5>
-          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+					<div class="row flex">
+						<div class="column width-6 offset-3 center">
+							<div class="widget">
+<!--								<h4 class="widget-title">Twitter | Facebook</h4>-->
+								<ul class="social-list list-horizontal">
+									<li><a href="#">Twitter </a></li>
+									<li>&nbsp;&nbsp;|&nbsp;&nbsp;</li>
+									<li><a href="#">Facebook</a></li>
+								</ul>
+								<ul class="social-list list-horizontal">
+									<li><a href="#"><i class="fab fa-twitter fa-2x"></i></a></li>
+									<li><a href="#"><i class="fab fa-facebook fa-2x"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
 
+				</div>
+				<div class="footer-bottom">
+					<div class="row">
+						<div class="column width-12">
+							<div class="footer-bottom-inner">
+<!--								<p class="copyright pull-left clear-float-on-mobile">&copy; ThemeMountain. All Rights Reserved. <a href="#" class="scroll-to-top">Top</a></p>-->
+								<p class="copyright pull-left clear-float-on-mobile">魚を未来につなげる｜本格鮮魚店 F-DIRECT</p>
+								<a href="#" class="scroll-to-top">Top</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+			<!-- Footer End -->
 
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Settings</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Connect</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
-        </div>
-      </div>
+		</div>
+	</div>
 
-      <div class="row">
-        <div class="col l12 s12">
-
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3325.023070851933!2d130.3788916!3d33.5527769!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35419377afb8f2fd%3A0x60be1cd501b246b7!2sF-DIRECT!5e0!3m2!1sja!2sjp!4v1597513390554!5m2!1sja!2sjp" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-
-        </div>
-      </div>
-
-    </div>
-    <div class="footer-copyright">
-      <div class="container">
-      Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
-      </div>
-    </div>
-  </footer>
-
-
-  <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="js/materialize.js"></script>
-  <script src="js/app.js"></script>
-
-  </body>
+	<!-- Js -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="http://maps.googleapis.com/maps/api/js?v=3"></script>
+	<script src="js/timber.master.min.js"></script>
+	<script src="https://embed.small.chat/T01A2DNBVTPG01A5GBB6BC.js" async></script>
+</body>
 </html>

@@ -1,75 +1,41 @@
 /* Custom Stylesheet */
-/**
- * Use this file to override Materialize files so you can update
- * the core Materialize files in the future
- *
- * Made By MaterializeCSS.com
- */
 
-nav ul a,
-nav .brand-logo {
-  color: #444;
+.primary-color {
+  color: #FFFFFF !important;
 }
-
-p {
-  line-height: 2rem;
+.secondary-color {
+  color: #008BD6 !important;
 }
-
-.sidenav-trigger {
-  color: #26a69a;
+.third-color {
+  color: #0059B2 !important;
+}
+.four-color {
+  color: #AF001D !important;
+}
+.five-color {
+  color: #0f9d58 !important;
 }
 
-.parallax-container {
-  min-height: 380px;
-  line-height: 0;
-  height: auto;
-  color: rgba(255,255,255,.9);
+.primary-bg-color {
+  background: #008BD6 !important;
 }
-  .parallax-container .section {
-    width: 100%;
-  }
-
-@media only screen and (max-width : 992px) {
-  .parallax-container .section {
-    position: absolute;
-    top: 40%;
-  }
-  #index-banner .section {
-    top: 10%;
-  }
+.secondary-bg-color {
+  background: #FFFFFF !important;
+}
+.third-bg-color {
+  background: #0059B2 !important;
+}
+.four-bg-color {
+  background: #AF001D !important;
 }
 
-@media only screen and (max-width : 600px) {
-  #index-banner .section {
-    top: 0;
-  }
+.header-line {
+  padding: 0.5em; /*文字周りの余白*/
+  /*color: #008BD6; !*文字色*!*/
+  /*background: #fffaf4;  !*背景色*!*/
+  border-left: solid 5px #72B8FF; /*左線（実線 太さ 色）*/
 }
 
-.icon-block {
-  padding: 0 15px;
-}
-.icon-block .material-icons {
-  font-size: inherit;
-}
-
-footer.page-footer {
-  margin: 0;
-}
-
-.custom-header {
-  color: white;
-  background: #000;
-}
-
-.custom-footer {
-  color: white;
-  background: #008BD6;
-}
-
-.custom-btn {
-  color: white;
-  background: #000;
-}
-.custom-btn:hover {
-  background: #008BD6;
+.ml-50 {
+  margin-left: 5rem;
 }
